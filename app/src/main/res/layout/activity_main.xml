@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_view"
+    android:padding="20dp"
+    tools:context="com.example.dell.relaxreminder.MainWindow.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today you have relax"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="60dp"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/donut_progress"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        custom:donut_finished_color="@color/colorPrimaryDark"
+        custom:donut_unfinished_stroke_width="5dp"
+        custom:donut_unfinished_color="#131cbf"
+        custom:donut_finished_stroke_width="10dp"
+        custom:donut_text_size="50sp"
+        custom:donut_text_color="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="180dp"
+        android:textSize="15sp"
+        android:id="@+id/choosen_relax_text"
+        android:layout_marginLeft="180dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_relax_buttons"
+        android:text="Relax"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:tint ="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/log_button"
+
+            android:tint="@color/colorPrimaryDark"
+            android:padding="7dp"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/outlines_button"
+
+            android:tint="@color/colorPrimaryDark"
+            android:padding="7dp"
+            android:layout_marginLeft="15dp"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chart_button"
+
+            android:tint="@color/colorPrimaryDark"
+            android:padding="7dp"
+            android:layout_marginLeft="15dp"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_button"
+
+            android:tint="@color/colorPrimaryDark"
+            android:padding="7dp"
+            android:layout_marginLeft="15dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
